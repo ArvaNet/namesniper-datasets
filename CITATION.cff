@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below and link to https://namesniper.pro/research"
+title: "NameSniper open datasets: username scarcity and handle markets"
+type: dataset
+authors:
+  - name: "NameSniper Research"
+    website: "https://namesniper.pro"
+url: "https://namesniper.pro/research"
+repository-code: "https://github.com/ArvaNet/namesniper-datasets"
+license: CC-BY-4.0
+date-released: "2026-09-21"
+keywords:
+  - usernames
+  - social media handles
+  - telegram
+  - ton blockchain
+  - roblox
+  - kick
+  - namespace scarcity

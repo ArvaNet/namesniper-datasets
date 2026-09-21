@@ -1,0 +1,387 @@
+{
+  "generatedAt": "2026-09-21",
+  "maintainer": "https://namesniper.pro",
+  "platforms": [
+    {
+      "platform": "instagram",
+      "displayName": "Instagram",
+      "username": {
+        "minLength": 1,
+        "maxLength": 30,
+        "pattern": "^(?!.*\\.\\.)(?!\\.)(?!.*\\.$)[a-zA-Z0-9._]+$",
+        "allowedCharacters": "letters, numbers, periods (.), underscores (_) - no consecutive periods, cannot start or end with a period",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot start or end with a period",
+          "No two consecutive periods",
+          "Case-insensitive (auto-lowercased)"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 150,
+      "source": "https://help.instagram.com/583107688369069",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "tiktok",
+      "displayName": "TikTok",
+      "username": {
+        "minLength": 2,
+        "maxLength": 24,
+        "pattern": "^(?!.*\\.\\.)(?![._])[a-zA-Z0-9._]+(?<![._])$",
+        "allowedCharacters": "letters, numbers, periods (.), underscores (_) - no consecutive periods, cannot start or end with a period or underscore",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot start or end with a period or underscore",
+          "No consecutive periods",
+          "Case-insensitive (auto-lowercased)",
+          "Reserved words include \"admin\", \"support\", \"official\", \"tiktok\""
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 80,
+      "source": "https://support.tiktok.com/en/getting-started/setting-up-your-profile/changing-your-username",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "twitter",
+      "displayName": "X (Twitter)",
+      "username": {
+        "minLength": 1,
+        "maxLength": 15,
+        "pattern": "^[a-zA-Z0-9_]+$",
+        "allowedCharacters": "letters, numbers, and underscores (_) only",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot contain the word \"twitter\" or \"admin\" (reserved)",
+          "No spaces, hyphens, or symbols other than underscore"
+        ]
+      },
+      "displayNameMaxLength": 50,
+      "bioMaxLength": 160,
+      "source": "https://help.x.com/en/managing-your-account/x-username-rules",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "youtube",
+      "displayName": "YouTube",
+      "username": {
+        "minLength": 3,
+        "maxLength": 30,
+        "pattern": "^(?![_\\-.·])[a-zA-Z0-9_\\-.·]+(?<![_\\-.·])$",
+        "allowedCharacters": "letters, numbers, underscores (_), hyphens (-), periods (.), middle dot (·) - cannot start or end with a separator",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot start or end with underscore, hyphen, period, or middle dot",
+          "Cannot look URL-like or phone-number-like",
+          "Cannot mix left-to-right and right-to-left scripts (except trailing digits)",
+          "Some CJK scripts allow shorter handles (1-2 chars)"
+        ]
+      },
+      "displayNameMaxLength": 100,
+      "bioMaxLength": 1000,
+      "source": "https://support.google.com/youtube/answer/11585688",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "reddit",
+      "displayName": "Reddit",
+      "username": {
+        "minLength": 3,
+        "maxLength": 20,
+        "pattern": "^[a-zA-Z0-9_-]+$",
+        "allowedCharacters": "letters, numbers, underscores (_), hyphens (-)",
+        "caseSensitive": false,
+        "extraRules": [
+          "No spaces",
+          "Cannot impersonate Reddit admins, major subreddit moderators, or public figures"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 200,
+      "source": "https://support.reddithelp.com/hc/en-us/articles/360043471231-How-do-I-update-my-profile-settings",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "telegram",
+      "displayName": "Telegram",
+      "username": {
+        "minLength": 5,
+        "maxLength": 32,
+        "pattern": "^[a-zA-Z](?!.*__)(?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$",
+        "allowedCharacters": "letters, numbers, underscores (_) - must start with a letter, no consecutive or trailing underscores",
+        "caseSensitive": false,
+        "extraRules": [
+          "Must start with a letter (cannot start with a digit or underscore)",
+          "Cannot end with an underscore",
+          "No consecutive underscores"
+        ]
+      },
+      "displayNameMaxLength": 64,
+      "bioMaxLength": 70,
+      "source": "https://telegram.org/faq#usernames-and-t-me",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "github",
+      "displayName": "GitHub",
+      "username": {
+        "minLength": 1,
+        "maxLength": 39,
+        "pattern": "^(?!-)(?!.*--)[a-zA-Z0-9-]+(?<!-)$",
+        "allowedCharacters": "letters, numbers, hyphens (-) - no leading, trailing, or consecutive hyphens",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot begin or end with a hyphen",
+          "Cannot contain consecutive hyphens"
+        ]
+      },
+      "displayNameMaxLength": 255,
+      "bioMaxLength": 160,
+      "source": "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/changing-your-github-username",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "linkedin",
+      "displayName": "LinkedIn",
+      "username": {
+        "minLength": 3,
+        "maxLength": 100,
+        "pattern": "^[a-zA-Z0-9-]+$",
+        "allowedCharacters": "letters, numbers, hyphens (-)",
+        "caseSensitive": false,
+        "extraRules": [
+          "No spaces, symbols, or special characters",
+          "Cannot contain the word \"linkedin\""
+        ]
+      },
+      "displayNameMaxLength": 60,
+      "bioMaxLength": 220,
+      "source": "https://www.linkedin.com/help/linkedin/answer/a542685/manage-your-public-profile-url",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "npm",
+      "displayName": "npm",
+      "username": {
+        "minLength": 1,
+        "maxLength": 214,
+        "pattern": "^[a-z0-9-]+$",
+        "allowedCharacters": "lowercase letters, numbers, hyphens (-) - no uppercase, no periods, no underscores, no special characters",
+        "caseSensitive": true,
+        "extraRules": [
+          "Lowercase only - uppercase is disallowed",
+          "Uppercase letters are rejected entirely (not case-folded - `NPM` is invalid, not an alias for `npm`)",
+          "Cannot start with a period (.) or underscore (_)",
+          "Cannot contain URL-unsafe characters or ~)('!*"
+        ]
+      },
+      "source": "https://docs.npmjs.com/creating-a-new-npm-user-account",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "twitch",
+      "displayName": "Twitch",
+      "username": {
+        "minLength": 4,
+        "legacyMinLength": 3,
+        "maxLength": 25,
+        "pattern": "^[a-zA-Z_][a-zA-Z0-9_]*$",
+        "allowedCharacters": "letters, numbers, underscores (_) - first character must be a letter or underscore",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot start with a digit"
+        ]
+      },
+      "displayNameMaxLength": 25,
+      "bioMaxLength": 300,
+      "source": "https://help.twitch.tv/s/article/managing-your-username",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "producthunt",
+      "displayName": "Product Hunt",
+      "username": {
+        "minLength": 3,
+        "maxLength": 30,
+        "pattern": "^[a-zA-Z0-9_-]+$",
+        "allowedCharacters": "letters, numbers, underscores (_), hyphens (-)",
+        "caseSensitive": false,
+        "extraRules": [
+          "No spaces or special characters",
+          "Username can only be changed once every 30 days",
+          "Length and character rules are not officially published - values verified empirically"
+        ]
+      },
+      "displayNameMaxLength": 50,
+      "bioMaxLength": 160,
+      "source": "https://help.producthunt.com/en/articles/6007355-how-do-i-update-my-username",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "threads",
+      "displayName": "Threads",
+      "username": {
+        "minLength": 1,
+        "maxLength": 30,
+        "pattern": "^(?!.*\\.\\.)(?!\\.)(?!.*\\.$)[a-zA-Z0-9._]+$",
+        "allowedCharacters": "letters, numbers, periods (.), underscores (_) - no consecutive periods, cannot start or end with a period",
+        "caseSensitive": false,
+        "extraRules": [
+          "Cannot start or end with a period",
+          "No consecutive periods",
+          "Rules inherited from linked Instagram account"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 150,
+      "source": "https://help.instagram.com/584760495555107",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "bluesky",
+      "displayName": "Bluesky",
+      "username": {
+        "minLength": 3,
+        "maxLength": 253,
+        "pattern": "^(?:[a-zA-Z0-9][a-zA-Z0-9-]{1,16}[a-zA-Z0-9]|[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+)$",
+        "allowedCharacters": "letters, numbers, hyphens (-) - case-insensitive (stored lowercase). Short form like \"alice\" (auto-appends .bsky.social) or full DNS like \"alice.bsky.social\"",
+        "caseSensitive": false,
+        "extraRules": [
+          "Short form: 3–18 chars, handled as <name>.bsky.social",
+          "Full form: DNS-style, segments cannot start or end with a hyphen",
+          "Per-segment max 63 characters",
+          "Additional platform restrictions apply (reserved TLDs, digit-leading TLDs) - Bluesky enforces these at registration"
+        ]
+      },
+      "displayNameMaxLength": 64,
+      "bioMaxLength": 256,
+      "source": "https://atproto.com/specs/handle",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "mastodon",
+      "displayName": "Mastodon",
+      "username": {
+        "minLength": 1,
+        "maxLength": 30,
+        "pattern": "^[a-zA-Z0-9_]+$",
+        "allowedCharacters": "letters, numbers, underscores (_) - no hyphens, periods, or other special characters",
+        "caseSensitive": false,
+        "extraRules": [
+          "No hyphens, periods, or special characters in local usernames",
+          "Individual instances may customize these limits; values reflect default Mastodon codebase",
+          "Instance-specific reserved words (e.g., \"admin\", \"system\") may apply"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 500,
+      "source": "https://github.com/mastodon/mastodon/blob/main/app/models/account.rb",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "pinterest",
+      "displayName": "Pinterest",
+      "username": {
+        "minLength": 3,
+        "maxLength": 30,
+        "pattern": "^(?!\\d+$)[a-zA-Z0-9_]+$",
+        "allowedCharacters": "letters, numbers, underscores (_) - cannot be entirely numeric",
+        "caseSensitive": false,
+        "extraRules": [
+          "No spaces, punctuation, or special characters",
+          "Cannot be entirely numeric"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 500,
+      "source": "https://help.pinterest.com/en/article/edit-your-profile",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "snapchat",
+      "displayName": "Snapchat",
+      "username": {
+        "minLength": 3,
+        "maxLength": 15,
+        "pattern": "^[a-zA-Z][a-zA-Z0-9._-]*[a-zA-Z0-9]$",
+        "allowedCharacters": "letters, numbers, hyphens (-), underscores (_), periods (.) - must start with a letter and end with a letter or digit",
+        "caseSensitive": false,
+        "extraRules": [
+          "Must begin with a letter",
+          "Must end with a letter or digit",
+          "No spaces, emojis, or special symbols"
+        ]
+      },
+      "displayNameMaxLength": 30,
+      "bioMaxLength": 80,
+      "source": "https://help.snapchat.com/hc/en-us/articles/7012349845140-How-do-I-change-my-Snapchat-username",
+      "verifiedAt": "2026-04-14"
+    },
+    {
+      "platform": "roblox",
+      "displayName": "Roblox",
+      "username": {
+        "minLength": 3,
+        "maxLength": 20,
+        "pattern": "^(?!_)(?!.*_.*_)[a-zA-Z0-9_]+(?<!_)$",
+        "allowedCharacters": "letters, numbers, at most one underscore (_) - not as the first or last character",
+        "caseSensitive": false,
+        "extraRules": [
+          "Maximum one underscore, never first or last",
+          "No spaces, periods, or hyphens",
+          "Names are filtered for appropriateness at signup"
+        ]
+      },
+      "source": "https://en.help.roblox.com/hc/en-us/articles/203313410",
+      "verifiedAt": "2026-06-12"
+    },
+    {
+      "platform": "kick",
+      "displayName": "Kick",
+      "username": {
+        "minLength": 4,
+        "legacyMinLength": 3,
+        "maxLength": 25,
+        "pattern": "^[a-zA-Z0-9_]+$",
+        "allowedCharacters": "letters, numbers, and underscores (_)",
+        "caseSensitive": false,
+        "extraRules": []
+      },
+      "source": "https://kick.com/",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "platform": "substack",
+      "displayName": "Substack",
+      "username": {
+        "minLength": 1,
+        "maxLength": 63,
+        "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$",
+        "allowedCharacters": "letters, numbers, hyphens (-) - cannot start or end with a hyphen",
+        "caseSensitive": false,
+        "extraRules": [
+          "Exact length limits are not published by Substack; encoded as DNS subdomain rules since every handle resolves as {handle}.substack.com"
+        ]
+      },
+      "source": "https://support.substack.com/hc/en-us/articles/15574565677204-What-are-Substack-Handles",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "platform": "linktree",
+      "displayName": "Linktree",
+      "username": {
+        "minLength": 1,
+        "maxLength": 50,
+        "pattern": "^[a-zA-Z0-9._-]+$",
+        "allowedCharacters": "letters, numbers, periods (.), underscores (_), hyphens (-)",
+        "caseSensitive": false,
+        "extraRules": [
+          "Exact length limits are not published by Linktree; pattern is a permissive URL-slug charset"
+        ]
+      },
+      "source": "https://linktr.ee/en/articles/5434143-what-is-my-linktree-username",
+      "verifiedAt": "2026-08-17"
+    }
+  ]
+}

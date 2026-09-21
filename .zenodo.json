@@ -1,0 +1,27 @@
+{
+  "title": "NameSniper open datasets: username scarcity and handle markets",
+  "upload_type": "dataset",
+  "description": "<p>First-party data on username scarcity and handle markets: Telegram username sales from public TON blockchain records, Roblox and Kick namespace availability studies, and machine-readable username rules and handle release policies by platform.</p><p>Methods, study pages and the latest figures: <a href=\"https://namesniper.pro/research\">https://namesniper.pro/research</a></p>",
+  "creators": [
+    {
+      "name": "NameSniper Research"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "usernames",
+    "social media handles",
+    "telegram",
+    "ton blockchain",
+    "roblox",
+    "kick",
+    "namespace scarcity"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://namesniper.pro/research",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-other"
+    }
+  ]
+}

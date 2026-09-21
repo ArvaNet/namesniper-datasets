@@ -1,0 +1,501 @@
+{
+  "generatedAt": "2026-09-21",
+  "maintainer": "https://namesniper.pro",
+  "platforms": [
+    {
+      "platform": "telegram",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "Quickly",
+          "note": "Telegram publishes no hold policy - a changed-away username re-enters the public pool fast. Saving an empty username releases yours instantly.",
+          "tone": "open"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "Squatted names only",
+          "note": "Telegram reserves the right to recall usernames of unused bots and channels and openly squatted names - no blanket sweeps of personal handles.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "Likely, undocumented",
+          "note": "Accounts self-destruct after 18 months of inactivity by default; Telegram doesn’t document when the username returns to the pool.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "None",
+          "note": "Change your username any time from Settings - no waiting period, no fee.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "t.me + Fragment signals",
+          "note": "Visible profiles prove taken; Fragment proves auction state and price. Free vs hidden is indistinguishable from outside the app - we say so instead of guessing.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Most liquid namespace",
+          "note": "Instant releases, a liquid collectibles market (Fragment, on the TON blockchain), and a paid-offer path for taken names - more ways to get a name than any other platform.",
+          "tone": "open"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "platform": "twitch",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "After 180+ days",
+          "note": "Abandoned usernames of non-Partnered accounts take at least 180 days before they can be reclaimed through self-service - no announced date.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "Real, period unstated",
+          "note": "Twitch confirms accounts can be \"recycled due to inactivity\" (fully deleted, unrecoverable). The once-published 12-month threshold and batch releases date to its 2017 policy announcement; current docs state no period.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "After 6+ months",
+          "note": "Deleted-account logins take a minimum of 6 months to recycle.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "60 days",
+          "note": "One username change per 60 days - blocked during an active broadcast or while a VOD upload is pending; verified email required.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "Official Twitch API",
+          "note": "Empty result = no active account. Names in the 6-month hold zone can look free before they are claimable - the watch catches the real release.",
+          "tone": "open"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Real but unscheduled",
+          "note": "Renames start a datable 6-month clock; recycling waves are rare and never announced. Twitch offers no availability alerts of its own.",
+          "tone": "conditional"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Twitch - Username, Rename and Recycling Policies",
+          "url": "https://help.twitch.tv/s/article/username-rename-and-recycling-policies?language=en_US"
+        },
+        {
+          "title": "Twitch - Creating an Account with Twitch",
+          "url": "https://help.twitch.tv/s/article/creating-an-account-with-twitch?language=en_US"
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "After a short hold",
+          "note": "Instagram publishes no hold length, but its help center confirms recently freed usernames are temporarily blocked from being claimed by others.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "No program",
+          "note": "Dormant accounts keep their handles - Instagram documents no reclaim program or claim path; its terms reserve username changes only for IP infringement and impersonation.",
+          "tone": "locked"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "After ~30 days",
+          "note": "Instagram says you can re-register the username after the 30-day deletion window - if nobody else took it first; full data deletion can take up to 90 days.",
+          "tone": "open"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "None",
+          "note": "Usernames can be changed at any time from Edit Profile; high-reach accounts may get a review step before the change applies.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "HTTP profile signals",
+          "note": "Bot-walled platform - dynamic confidence scoring; only confidence-confirmed transitions trigger alerts.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Continuous, contested",
+          "note": "Terminations and rebrands free handles every day; valuable drops are re-claimed by automation within minutes.",
+          "tone": "conditional"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Instagram Help Center - Change your username",
+          "url": "https://help.instagram.com/583107688369069"
+        },
+        {
+          "title": "Instagram Help Center - Reusing a username you had before",
+          "url": "https://help.instagram.com/876876079327341"
+        },
+        {
+          "title": "Instagram Help Center - When a username is claimed but seems inactive",
+          "url": "https://help.instagram.com/513717858639392"
+        }
+      ]
+    },
+    {
+      "platform": "twitter",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "Immediately",
+          "note": "X states a changed-away username is immediately available for someone else - no hold period at all.",
+          "tone": "open"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "Official marketplace",
+          "note": "X asks for a login at least every 30 days and may remove inactive accounts - and since May 2026 reassigns inactive handles to Premium subscribers through its official Handle Marketplace, with fees on rare names.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "After deactivation",
+          "note": "The 30-day deactivation window must elapse before deletion releases the handle.",
+          "tone": "open"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "None",
+          "note": "Handles can be changed at any time in Settings.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "HTTP profile signals",
+          "note": "Login walls and rate limiting make single checks ambiguous - confidence scoring filters the noise.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "High competition",
+          "note": "The most-watched namespace online. Dropped names are a race between automated watchers.",
+          "tone": "conditional"
+        }
+      ],
+      "sources": [
+        {
+          "title": "X Help Center - X username rules",
+          "url": "https://help.x.com/en/managing-your-account/x-username-rules"
+        },
+        {
+          "title": "X Help Center - How to change your X handle",
+          "url": "https://help.x.com/en/managing-your-account/change-x-handle"
+        },
+        {
+          "title": "X Help Center - X's username squatting policy",
+          "url": "https://help.x.com/en/rules-and-policies/x-username-squatting"
+        }
+      ]
+    },
+    {
+      "platform": "tiktok",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "After a short hold",
+          "note": "TikTok holds a released username for an unspecified short period before it can be added to any account.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "180-day policy",
+          "note": "Official inactive-account policy: after 180 days without logging in, a dormant account’s username may be reset to a randomized numeric handle - discretionary, with no timetable and no claim process.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "Undocumented",
+          "note": "The in-app flow shows a 30-day deactivation window, but TikTok publishes no rule on when - or whether - a deleted account’s handle is released.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "30 days",
+          "note": "One username change per 30 days.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "HTTP + confidence scoring",
+          "note": "Aggressive bot detection makes single checks ambiguous - only high-confidence transitions alert.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Terminations, rebrands & resets",
+          "note": "Drops come from bans, deletions, the 30-day rename cycle, and 180-day inactivity resets - dormant handles can genuinely return to the pool.",
+          "tone": "conditional"
+        }
+      ],
+      "sources": [
+        {
+          "title": "TikTok Support - Changing your username",
+          "url": "https://www.tiktok.com/support/faq_detail?id=7581821550156962315"
+        },
+        {
+          "title": "TikTok Support - Setting up your profile",
+          "url": "https://support.tiktok.com/en/getting-started/setting-up-your-profile"
+        }
+      ]
+    },
+    {
+      "platform": "youtube",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "After 14 days",
+          "note": "YouTube holds a changed-away @handle for exactly 14 days (both URLs keep working), then releases it for anyone to claim.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "None",
+          "note": "No public inactivity-recycling program - dormant channels keep their handles indefinitely.",
+          "tone": "locked"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "After ~30 days",
+          "note": "Channel deletion finalizes, then the @handle returns to availability.",
+          "tone": "open"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "2 per 14 days",
+          "note": "YouTube allows two handle changes within any 14-day window.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "HTTP redirect signal",
+          "note": "The search-page redirect for unclaimed handles is one of the cleanest availability signals of any platform.",
+          "tone": "open"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Less bot pressure",
+          "note": "Drops are rarer than on X or Instagram, but third-party watcher competition is lower too.",
+          "tone": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "YouTube Help - Learn about YouTube handles",
+          "url": "https://support.google.com/youtube/answer/11585688"
+        },
+        {
+          "title": "YouTube Help - Change, view, or hide your handle",
+          "url": "https://support.google.com/youtube/answer/15920820"
+        },
+        {
+          "title": "YouTube Help - Understand your channel's URLs",
+          "url": "https://support.google.com/youtube/answer/6180214"
+        }
+      ]
+    },
+    {
+      "platform": "roblox",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "Never",
+          "note": "Past usernames stay reserved to the account - the owner can switch back, nobody else can claim them.",
+          "tone": "locked"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "None",
+          "note": "No inactivity sweeps - accounts dormant for a decade still hold their names.",
+          "tone": "locked"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "Undocumented",
+          "note": "Roblox publishes no rule on what happens to a deleted account’s name - no documented hold or release. Treat deleted-name drops as unpredictable long shots.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Rename cost",
+          "value": "Costs Robux",
+          "note": "Renames carry a Robux fee (widely reported as 1,000, though Roblox no longer publishes the amount); display names change free once per 7 days.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "Official usernames API",
+          "note": "First-party endpoint - the highest confidence tier NameSniper assigns to any platform.",
+          "tone": "open"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Hunt, don’t wait",
+          "note": "The namespace only fills up. Snipe unregistered combinations now; keep a watch as the long shot.",
+          "tone": "locked"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Roblox Support - Changing Your Username",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/203313130-Changing-Your-Username"
+        },
+        {
+          "title": "Roblox Support - How do I deactivate or delete my account?",
+          "url": "https://en.help.roblox.com/hc/en-us/articles/203313050-How-do-I-deactivate-or-delete-my-account"
+        },
+        {
+          "title": "Roblox - Users API documentation",
+          "url": "https://users.roblox.com/docs/index.html"
+        }
+      ]
+    },
+    {
+      "platform": "kick",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "Undocumented",
+          "note": "Kick publishes no rule on whether a changed-away username returns to the pool - one of several gaps in a young platform’s policy surface.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "Discretionary",
+          "note": "No published policy, but Kick has reclaimed inactive and squatted names and handed them to active streamers - activity is the strongest claim.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "Undocumented",
+          "note": "Account deletion goes through Kick support; no published rule on whether the username frees up afterward.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "60 days + 2FA",
+          "note": "One self-serve username change per 60 days, and two-factor authentication must be enabled first.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "Official Kick API",
+          "note": "Every check runs against official Kick data - a present name is taken at high confidence; an absent one reads as available.",
+          "tone": "open"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Land-grab phase",
+          "note": "A namespace barely three years old: the brandable middle is still open even though common words are largely claimed. Claim first; watch the taken one as the backup play.",
+          "tone": "open"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kick Help Center - How to update your profile",
+          "url": "https://help.kick.com/en/articles/7120563-how-to-update-your-profile"
+        },
+        {
+          "title": "Kick Help Center - How to enable Two-Factor Authentication",
+          "url": "https://help.kick.com/en/articles/7120898-how-to-enable-two-factor-authentication"
+        },
+        {
+          "title": "Kick Developer Docs - Channels API",
+          "url": "https://docs.kick.com/apis/channels"
+        },
+        {
+          "title": "Kick - Terms of Service",
+          "url": "https://kick.com/terms-of-service"
+        }
+      ]
+    },
+    {
+      "platform": "snapchat",
+      "verifiedAt": "2026-08-14",
+      "facts": [
+        {
+          "label": "Rename frees old name",
+          "value": "Never",
+          "note": "Snap’s launch-era policy: you can only take a username \"not previously owned by anyone else, including yourself.\" Changed-away names stay locked.",
+          "tone": "locked"
+        },
+        {
+          "label": "Inactivity recycling",
+          "value": "None",
+          "note": "No inactive-username program and no claim process. Snap’s terms reserve the power to reclaim names, but no user-facing mechanism exists.",
+          "tone": "locked"
+        },
+        {
+          "label": "Deletion frees name",
+          "value": "Not documented",
+          "note": "Deleting deactivates the account for 30 days (reactivatable), then permanent deletion follows 30 days after that - Snap documents no release of the username at any point.",
+          "tone": "locked"
+        },
+        {
+          "label": "Rename cooldown",
+          "value": "Once a year",
+          "note": "Username changes are allowed every 12 months to the day. Display names change freely.",
+          "tone": "neutral"
+        },
+        {
+          "label": "How we check",
+          "value": "Web profile signals",
+          "note": "A public profile confirms taken. A 404 can also be a private or reserved account - the in-app signup flow is the only ground truth.",
+          "tone": "conditional"
+        },
+        {
+          "label": "Drop outlook",
+          "value": "Effectively closed",
+          "note": "Previously-owned names don’t come back. The supply is never-registered names - check ideas now and claim instantly when one is free.",
+          "tone": "locked"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Snapchat Support - How do I change my Snapchat username?",
+          "url": "https://help.snapchat.com/hc/en-us/articles/7012349845140-How-do-I-change-my-Snapchat-username"
+        },
+        {
+          "title": "Snapchat Support - What is a Display Name on Snapchat?",
+          "url": "https://help.snapchat.com/hc/en-us/articles/7012316571540-What-is-a-Display-Name-on-Snapchat-How-do-I-change-it"
+        },
+        {
+          "title": "Snapchat Support - How do I deactivate or delete my Snapchat account?",
+          "url": "https://help.snapchat.com/hc/en-us/articles/7012328360596-How-do-I-deactivate-or-delete-my-Snapchat-account"
+        },
+        {
+          "title": "Snapchat Support - Username Infringement",
+          "url": "https://help.snapchat.com/hc/en-us/articles/7047503878804-Username-Infringement"
+        },
+        {
+          "title": "Snap Newsroom - Username change announcement (Feb 2022)",
+          "url": "https://newsroom.snap.com/username-change"
+        }
+      ]
+    }
+  ]
+}
