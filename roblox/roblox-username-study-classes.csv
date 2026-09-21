@@ -1,0 +1,13 @@
+class,label,length,checked,taken,available,blocked,taken_pct
+4-repeated,Repeated characters,4,36,36,0,0,100
+4-words,Real dictionary words,4,1100,1090,0,10,99.09
+4-digits,All digits,4,500,500,0,0,100
+4-cvcv,Pronounceable (CVCV),4,600,600,0,0,100
+4-underscore,With an underscore,4,300,300,0,0,100
+4-letters,Random letters only,4,1500,1500,0,0,100
+4-alnum,Random letters + digits,4,3000,3000,0,0,100
+3-alnum,3 characters (letters + digits),3,1000,999,0,1,99.9
+5-letters,5 characters (random letters),5,2500,2496,0,4,99.84
+6-letters,6 characters (random letters),6,1500,522,907,71,34.8
+7-letters,7 characters (random letters),7,1500,46,1353,101,3.07
+8-letters,8 characters (random letters),8,1500,2,1371,127,0.13

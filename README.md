@@ -7,8 +7,8 @@ Everything here is free to reuse under [CC BY 4.0](LICENSE): quote it, chart it,
 | Dataset | What it is | Period |
 |---|---|---|
 | [`telegram/`](telegram) | Telegram username sales, from public TON blockchain records | 2026-07-08 to 2026-09-20 |
-| [`kick/`](kick) | Kick username availability study | 2026-08-13 |
-| [`roblox/`](roblox) | Roblox username scarcity study | see folder |
+| [`kick/`](kick) | Kick username availability study | 2026-09-21 |
+| [`roblox/`](roblox) | Roblox username scarcity study | 2026-09-21 |
 | [`username-rules/`](username-rules) | Username rules and handle release policies by platform | exported 2026-09-21 |
 
 Last updated: 2026-09-21.
@@ -41,7 +41,7 @@ Prices are in TON. No USD conversion is included because the rate moves daily; c
 
 Study: https://namesniper.pro/research#kick-username-availability
 
-9,191 usernames checked one by one against the official Kick API, in 28 groups by pattern and length. 98.9% of common English words were taken (2,763 of 2,795).
+9,191 usernames checked one by one against the official Kick API, in 28 groups by pattern and length. 99% of common English words were taken (2,767 of 2,796).
 
 | File | Columns |
 |---|---|
@@ -56,9 +56,21 @@ Names that were free at the time of the check are deliberately not published: li
 
 Study: https://namesniper.pro/research#roblox-username-scarcity
 
-Short usernames sampled across the patterns people actually try (random strings, dictionary words, all-digit names, pronounceable inventions, names with an underscore, repeated characters), plus a sweep of random names from three to eight characters. A name counts as available only if Roblox would let someone register it; names that are merely not allowed are reported separately as `blocked`.
+15,036 usernames, measured 2026-09-21. Short names were sampled across the patterns people actually try (random strings, dictionary words, all-digit names, pronounceable inventions, names with an underscore, repeated characters), followed by a sweep of random names from three to eight characters.
 
-Files are added here when the current run completes.
+- Four characters: 0 of 7,036 available
+- Five letters: 0 of 2,500 available
+- Six letters: 60% free, this is where availability begins
+- Seven letters: 90% free. Eight letters: 91% free
+
+A name counts as `available` only if Roblox would let someone register it. `blocked` means Roblox itself rejects the name (content filter, reserved or invalid), which is a different thing from `taken`. At eight letters almost nothing is taken (2 of 1,500) but 127 names were blocked.
+
+| File | Columns |
+|---|---|
+| `roblox-username-study.csv` | `name`, `class`, `length`, `status` (`taken`, `available`, `blocked`), `checked_at` (UTC) |
+| `roblox-username-study-classes.csv` | `class`, `label`, `length`, `checked`, `taken`, `available`, `blocked`, `taken_pct` |
+
+The `name` column is empty for `blocked` rows. Names a content filter rejects are mostly slurs and profanity, so they are counted but not listed. The sample is seeded, so the study can be re-run on the same names.
 
 ## Username rules and handle release policies
 
