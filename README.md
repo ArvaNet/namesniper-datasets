@@ -86,4 +86,4 @@ Where a platform's documented rule and its real behaviour differ, the file recor
 
 > NameSniper Research (2026). [Dataset title]. https://namesniper.pro/research
 
-Need a different cut of the data, or a figure checked before you publish? Write to info@namesniper.pro.
+Need a different cut of the data, or a figure checked before you publish? Write to research@namesniper.pro.
