@@ -1,0 +1,35 @@
+license: cc-by-4.0
+pretty_name: "NameSniper open datasets: username scarcity and handle markets"
+language:
+  - en
+tags:
+  - usernames
+  - social-media
+  - handles
+  - telegram
+  - ton
+  - blockchain
+  - roblox
+  - kick
+  - gaming
+  - namespace
+size_categories:
+  - 10K<n<100K
+configs:
+  - config_name: roblox_username_study
+    data_files: roblox/roblox-username-study.csv
+    default: true
+  - config_name: roblox_username_study_classes
+    data_files: roblox/roblox-username-study-classes.csv
+  - config_name: kick_username_study_cells
+    data_files: kick/kick-username-study-cells.csv
+  - config_name: kick_username_study_taken_names
+    data_files: kick/kick-username-study-taken-names.csv
+  - config_name: telegram_top_sales
+    data_files: telegram/telegram-username-top-sales.csv
+  - config_name: telegram_sales_monthly
+    data_files: telegram/telegram-username-sales-monthly.csv
+  - config_name: telegram_sales_by_length
+    data_files: telegram/telegram-username-sales-by-length.csv
+  - config_name: telegram_sales_price_bands
+    data_files: telegram/telegram-username-sales-price-bands.csv

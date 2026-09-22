@@ -1,0 +1,45 @@
+# Mirrors this repo to the Hugging Face dataset on every push to main.
+# GitHub stays the source of truth; the HF dataset card is README.md with the
+# YAML header from hf-card-header.yml prepended (licence, tags, viewer configs).
+# Needs a repository secret HF_TOKEN: a Hugging Face write token.
+name: Sync to Hugging Face
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: hf-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet 'huggingface_hub>=0.34'
+      - name: Build dataset card
+        run: |
+          { echo '---'; cat hf-card-header.yml; echo '---'; echo; cat README.md; } > /tmp/README.md
+          cp /tmp/README.md README.md
+      - name: Upload
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+          HfApi(token=os.environ["HF_TOKEN"]).upload_folder(
+              repo_id="NameSniperPro/username-scarcity-and-handle-markets",
+              repo_type="dataset",
+              folder_path=".",
+              commit_message=f"Sync from GitHub {os.environ['GITHUB_SHA'][:7]}",
+              ignore_patterns=[".git/*", ".github/*", "sync.sh", "hf-card-header.yml", ".zenodo.json"],
+              delete_patterns=["*.csv", "*.json", "*.cff", "LICENSE"],
+          )
+          PY

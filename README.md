@@ -23,7 +23,7 @@ Every Telegram username sale settles on the public TON blockchain. Each record h
 
 Headline figures for 2026-07-08 to 2026-09-20 (75 days):
 
-- 66,466 sales, 6,576,595 TON in total
+- 66,541 sales, 6,578,600 TON in total
 - Four-letter names: 0.8% of sales, 51% of all money spent
 - Average four-letter price 6,028 TON, average five-letter price 52 TON (116x)
 - 77% of names sold for under 10 TON; 28 sales reached 10,000 TON
