@@ -1,5 +1,7 @@
 # NameSniper open datasets
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22904856.svg)](https://doi.org/10.5281/zenodo.22904856)
+
 First-party data on username scarcity and handle markets, published by [NameSniper](https://namesniper.pro), a name checker and handle monitor. Study pages, methods and the latest figures live at **https://namesniper.pro/research**.
 
 Everything here is free to reuse under [CC BY 4.0](LICENSE): quote it, chart it, republish it, commercially or not. The one condition is a credit to NameSniper with a link to https://namesniper.pro/research or to the study you used.
@@ -84,6 +86,8 @@ Where a platform's documented rule and its real behaviour differ, the file recor
 
 ## How to cite
 
-> NameSniper Research (2026). [Dataset title]. https://namesniper.pro/research
+> NameSniper Research (2026). [Dataset title]. NameSniper open datasets. https://doi.org/10.5281/zenodo.22904856
+
+The DOI always resolves to the latest release. Each release also has its own DOI on Zenodo.
 
 Need a different cut of the data, or a figure checked before you publish? Write to research@namesniper.pro.

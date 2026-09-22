@@ -6,6 +6,7 @@ authors:
   - name: "NameSniper Research"
     website: "https://namesniper.pro"
 url: "https://namesniper.pro/research"
+doi: 10.5281/zenodo.22904856
 repository-code: "https://github.com/ArvaNet/namesniper-datasets"
 license: CC-BY-4.0
 date-released: "2026-09-21"
