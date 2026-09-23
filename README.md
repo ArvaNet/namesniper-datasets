@@ -8,12 +8,12 @@ Everything here is free to reuse under [CC BY 4.0](LICENSE): quote it, chart it,
 
 | Dataset | What it is | Period |
 |---|---|---|
-| [`telegram/`](telegram) | Telegram username sales, from public TON blockchain records | 2026-07-08 to 2026-09-20 |
+| [`telegram/`](telegram) | Telegram username sales, from public TON blockchain records | full history 2022-10-26 to 2026-09-22 |
 | [`kick/`](kick) | Kick username availability study | 2026-09-21 |
 | [`roblox/`](roblox) | Roblox username scarcity: full 4-letter census + sample study | 2026-09-21 to 2026-09-23 |
 | [`username-rules/`](username-rules) | Username rules and handle release policies by platform | exported 2026-09-21 |
 
-Last updated: 2026-09-23.
+Last updated: 2026-09-24.
 
 ## Telegram username sales
 
@@ -21,18 +21,27 @@ Study: https://namesniper.pro/research#telegram-username-sales
 
 Every Telegram username sale settles on the public TON blockchain. Each record here can be checked against the chain by its transaction hash.
 
-Headline figures for 2026-07-08 to 2026-09-20 (75 days):
+**Full history, 2022-10-26 to 2026-09-22.** In September 2026 we imported the complete on-chain history of every username in the collection (651,274 names):
 
-- 66,541 sales, 6,578,600 TON in total
-- Four-letter names: 0.8% of sales, 51% of all money spent
-- Average four-letter price 6,028 TON, average five-letter price 52 TON (116x)
-- 77% of names sold for under 10 TON; 28 sales reached 10,000 TON
+- 748,738 sales, 123,053,795 TON in total, across 642,974 distinct names
+- Record sale: @danbao, 1,583,948 TON (2026-02-07)
+- By year: 2022 (launch, from 26 Oct) 21,552 sales / 47.8M TON; 2023 107,935 / 12.4M; 2024 104,167 / 10.1M; 2025 228,457 / 21.9M; 2026 to 22 Sep 286,627 / 30.9M
+- Four-letter names: 46% of all money ever spent on usernames
 
-**Read this before computing averages.** The aggregate files cover only the period in which the market was tracked continuously. Earlier records in the underlying index are large historic sales added afterwards; including them would inflate every average. The top-sales file is a ranking, so it draws on the full index.
+**Recent market, 2026-07-08 to 2026-09-22 (77 days):**
+
+- 78,201 sales, 7,618,426 TON in total
+- Four-letter names: 0.8% of sales, 48% of all money spent
+- Average four-letter price 6,085 TON, average five-letter price 54 TON (112x)
+- 76% of names sold for under 10 TON; 41 sales reached 10,000 TON
+
+The recent-market figures are higher than in the first release (66,541 sales to 2026-09-20): the full import surfaced 9,889 sales in that period on names our live tracker had not picked up. The shares and averages above, and the by-length and price-band files, describe the recent market; the yearly and all-time monthly files cover every recorded sale.
 
 | File | Columns |
 |---|---|
-| `telegram-username-sales-monthly.csv` | `month`, `sales`, `volume_ton`, `top_sale_ton`, `four_letter_sales`, `four_letter_volume_ton` |
+| `telegram-username-sales-yearly.csv` | `year`, `sales`, `volume_ton`, `top_sale_ton`, `four_letter_sales`, `four_letter_volume_ton` (every recorded sale since 2022-10-26) |
+| `telegram-username-sales-monthly-all-time.csv` | `month`, same columns (every recorded sale since 2022-10-26) |
+| `telegram-username-sales-monthly.csv` | (recent market) `month`, `sales`, `volume_ton`, `top_sale_ton`, `four_letter_sales`, `four_letter_volume_ton` |
 | `telegram-username-sales-by-length.csv` | `username_length` (13+ grouped), `sales`, `volume_ton`, `avg_price_ton` |
 | `telegram-username-sales-price-bands.csv` | `price_band_ton`, `sales` |
 | `telegram-username-top-sales.csv` | `rank`, `username`, `price_ton`, `date` (UTC), `tx_hash` (TON transaction) |

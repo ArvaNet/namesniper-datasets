@@ -29,6 +29,10 @@ configs:
     data_files: kick/kick-username-study-taken-names.csv
   - config_name: telegram_top_sales
     data_files: telegram/telegram-username-top-sales.csv
+  - config_name: telegram_sales_yearly
+    data_files: telegram/telegram-username-sales-yearly.csv
+  - config_name: telegram_sales_monthly_all_time
+    data_files: telegram/telegram-username-sales-monthly-all-time.csv
   - config_name: telegram_sales_monthly
     data_files: telegram/telegram-username-sales-monthly.csv
   - config_name: telegram_sales_by_length
