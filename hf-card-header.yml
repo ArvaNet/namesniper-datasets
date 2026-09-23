@@ -19,6 +19,8 @@ configs:
   - config_name: roblox_username_study
     data_files: roblox/roblox-username-study.csv
     default: true
+  - config_name: roblox_4letter_census
+    data_files: roblox/roblox-4letter-census.csv
   - config_name: roblox_username_study_classes
     data_files: roblox/roblox-username-study-classes.csv
   - config_name: kick_username_study_cells

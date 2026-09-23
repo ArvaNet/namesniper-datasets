@@ -1,0 +1,2 @@
+keyspace,total,checked,taken,reserved,blocked,available,checked_from,checked_to
+letters-only 4 characters (aaaa-zzzz),456976,456976,456903,10,63,0,2026-09-22,2026-09-23

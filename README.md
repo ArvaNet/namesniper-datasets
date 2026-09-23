@@ -10,10 +10,10 @@ Everything here is free to reuse under [CC BY 4.0](LICENSE): quote it, chart it,
 |---|---|---|
 | [`telegram/`](telegram) | Telegram username sales, from public TON blockchain records | 2026-07-08 to 2026-09-20 |
 | [`kick/`](kick) | Kick username availability study | 2026-09-21 |
-| [`roblox/`](roblox) | Roblox username scarcity study | 2026-09-21 |
+| [`roblox/`](roblox) | Roblox username scarcity: full 4-letter census + sample study | 2026-09-21 to 2026-09-23 |
 | [`username-rules/`](username-rules) | Username rules and handle release policies by platform | exported 2026-09-21 |
 
-Last updated: 2026-09-21.
+Last updated: 2026-09-23.
 
 ## Telegram username sales
 
@@ -58,9 +58,11 @@ Names that were free at the time of the check are deliberately not published: li
 
 Study: https://namesniper.pro/research#roblox-username-scarcity
 
-15,036 usernames, measured 2026-09-21. Short names were sampled across the patterns people actually try (random strings, dictionary words, all-digit names, pronounceable inventions, names with an underscore, repeated characters), followed by a sweep of random names from three to eight characters.
+**Full census, 2026-09-22/23:** every letters-only four-letter username, all 456,976 from `aaaa` to `zzzz`, was checked the same two ways. None can be registered: 456,903 are taken, 10 are reserved as previous names of renamed accounts, 63 are rejected by Roblox's filter, 0 are available. Published as counts only (`roblox-4letter-census.csv`).
 
-- Four characters: 0 of 7,036 available
+**Sample study:** 15,036 usernames, measured 2026-09-21. Short names were sampled across the patterns people actually try (random strings, dictionary words, all-digit names, pronounceable inventions, names with an underscore, repeated characters), followed by a sweep of random names from three to eight characters.
+
+- Four characters, every pattern incl. digits and underscores: 0 of 7,036 available
 - Five letters: 0 of 2,500 available
 - Six letters: 60% free, this is where availability begins
 - Seven letters: 90% free. Eight letters: 91% free
@@ -69,6 +71,7 @@ A name counts as `available` only if Roblox would let someone register it. `bloc
 
 | File | Columns |
 |---|---|
+| `roblox-4letter-census.csv` | `keyspace`, `total`, `checked`, `taken`, `reserved`, `blocked`, `available`, `checked_from`, `checked_to` |
 | `roblox-username-study.csv` | `name`, `class`, `length`, `status` (`taken`, `available`, `blocked`), `checked_at` (UTC) |
 | `roblox-username-study-classes.csv` | `class`, `label`, `length`, `checked`, `taken`, `available`, `blocked`, `taken_pct` |
 
