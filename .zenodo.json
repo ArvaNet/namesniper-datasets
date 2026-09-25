@@ -1,7 +1,7 @@
 {
   "title": "NameSniper open datasets: username scarcity and handle markets",
   "upload_type": "dataset",
-  "description": "<p>First-party data on username scarcity and handle markets: Telegram username sales from public TON blockchain records, Roblox and Kick namespace availability studies, and machine-readable username rules and handle release policies by platform.</p><p>Methods, study pages and the latest figures: <a href=\"https://namesniper.pro/research\">https://namesniper.pro/research</a></p>",
+  "description": "<p>First-party data on username scarcity and handle markets, published by NameSniper.</p><ul><li><b>Telegram username sales:</b> the full on-chain history of every settled sale since Fragment launched (2022-10-26 to 2026-09-22): 748,738 sales, 123M TON, across 642,974 names. Yearly and monthly totals, recent-market breakdowns by username length and price band, and the top 500 sales with TON transaction hashes.</li><li><b>Roblox username scarcity:</b> a full census of all 456,976 letters-only four-letter usernames (none can be registered), plus a 15,036-name sample study from three to eight characters.</li><li><b>Kick username availability:</b> 9,191 usernames tested; 99% of common English words are taken.</li><li><b>Username rules and handle release policies</b> for 20 platforms, machine-readable, with sources and verification dates.</li></ul><p>Methods, study pages and the latest figures: <a href=\"https://namesniper.pro/research\">https://namesniper.pro/research</a></p>",
   "creators": [
     {
       "name": "NameSniper Research"
@@ -15,7 +15,10 @@
     "ton blockchain",
     "roblox",
     "kick",
-    "namespace scarcity"
+    "namespace scarcity",
+    "fragment",
+    "username market",
+    "roblox usernames"
   ],
   "related_identifiers": [
     {
@@ -23,5 +26,7 @@
       "relation": "isSupplementTo",
       "resource_type": "publication-other"
     }
-  ]
+  ],
+  "version": "2026.09.24",
+  "publication_date": "2026-09-25"
 }
